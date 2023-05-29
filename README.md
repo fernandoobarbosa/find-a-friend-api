@@ -1,7 +1,7 @@
 # Nodejs Typescript Template
 
 # Environment vars
-This project uses the following environment variables and they are listed in the env.example file:
+This project uses the following environment variables and they are listed in the env.example file
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version LTS
