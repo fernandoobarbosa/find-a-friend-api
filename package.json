@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node build/server.js",
     "dev": "tsx watch src/server.ts",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test":"vitest run"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +16,12 @@
     "@rocketseat/eslint-config": "2.2.2",
     "@types/node": "20.11.24",
     "eslint": "8.57.0",
-    "prisma": "^5.10.2",
+    "prisma": "5.10.2",
     "tsup": "8.0.2",
     "tsx": "4.7.1",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "vite-tsconfig-paths": "4.3.1",
+    "vitest": "1.3.1"
   },
   "dependencies": {
     "dotenv": "16.4.5",
