@@ -1,4 +1,4 @@
-import fastify, { FastifyReply, FastifyRequest, FastifyRequest } from 'fastify'
+import fastify, { FastifyReply } from 'fastify'
 import { env } from './env'
 import { ZodError } from 'zod'
 import { orgsRoutes } from './http/controllers/orgs/orgs.routes'
