@@ -32,7 +32,7 @@ export async function createOrgController(
     return reply.status(201).send(org)
   } catch (error) {
     if (error instanceof OrgAlreadyExistsError) {
-      return reply.status(400).send({ message: error.message })
+      return reply.status(409).send({ message: error.message })
     }
   }
 }
