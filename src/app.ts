@@ -1,4 +1,4 @@
-import fastify from 'fastify'
+import fastify, { FastifyReply, FastifyRequest, FastifyRequest } from 'fastify'
 import { env } from './env'
 import { ZodError } from 'zod'
 import { orgsRoutes } from './http/controllers/orgs/orgs.routes'
@@ -7,6 +7,10 @@ import { petsRoutes } from './http/controllers/pets/pets.routes'
 
 export const app = fastify({
   logger: env.NODE_ENV === 'dev',
+})
+
+app.get('/health', (_, reply: FastifyReply) => {
+  return reply.status(200).send({ message: 'ok' })
 })
 
 app.register(fastifyJwt, {
