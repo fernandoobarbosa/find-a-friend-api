@@ -17,9 +17,3 @@
 - [x] O usuário que quer adotar, entrará em contato com a ORG via WhatsApp
 - Todos os filtros, além da cidade, são opcionais
 - [x] Para uma ORG acessar a aplicação como admin, ela precisa estar logada
-
-### Contexto da aplicação
-
-É comum ao estar desenvolvendo uma API, imaginar como esses dados vão estar sendo utilizados pelo cliente web e/ou mobile.
-
-Por isso, deixamos abaixo o link para o layout da aplicação que utilizaria essa API.
