@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: bounceapp/render-action@0.6.0
         with:
-          node-version: 18
           render-token: ${{ secrets.RENDER_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           service-id: srv-cnjo1021hbls73dqsbcg
