@@ -42,13 +42,13 @@ export class CreateOrgUseCase {
 
     if (orgByEmail) throw new OrgAlreadyExistsError()
 
-    const password_hash = await hash(password, 8)
+    const passwordHash = await hash(password, 8)
 
     const org = await this.orgsRepository.create({
       name,
       email,
       whatsapp,
-      password: password_hash,
+      password: passwordHash,
       cep,
       state,
       city,
