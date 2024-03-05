@@ -6,3 +6,20 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Org {
+  id           String  @id @default(uuid())
+  name         String
+  email        String  @unique
+  whatsapp     String
+  password     String
+  cep          String
+  state        String
+  city         String
+  neighborhood String
+  street       String
+  latitude     Decimal
+  longitude    Decimal
+
+  @@map("orgs")
+}
