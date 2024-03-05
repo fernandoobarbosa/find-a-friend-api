@@ -1,5 +1,7 @@
 name: Render
-on: [pull_request]:
+
+on: [push]:
+
 jobs:
   deploy:
     name: Wait for Deploy
@@ -13,4 +15,3 @@ jobs:
           service-id: srv-cnjo1021hbls73dqsbcg
           retries: 20
           wait: 16000
-          sleep: 30000
